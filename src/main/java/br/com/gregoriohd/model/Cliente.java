@@ -1,8 +1,5 @@
 package br.com.gregoriohd.model;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -35,8 +32,7 @@ public class Cliente {
 
 	private String nome_pai;
 
-	private Timestamp data_cadastro;
-
+	
 	public Long getId() {
 		return id;
 	}
@@ -109,9 +105,5 @@ public class Cliente {
 		this.nome_pai = nome_pai;
 	}
 
-	
-	public Timestamp getData_cadastro() {
-		return data_cadastro.valueOf(LocalDateTime.now());
-	}
-
+		
 }
